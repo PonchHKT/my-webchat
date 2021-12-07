@@ -1,0 +1,92 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-background);
+    width: 32vw;
+    height: 100vh; 
+    border-right: 1px solid var(--main-gray);
+    
+    .profil {
+        display: flex;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 25px;
+        img {
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .title {
+            color: var(--main-blue);
+            font: normal normal 600 18px/20px 'Montserrat';
+        }
+        .subtitle {
+            font: normal normal 400 13px/20px 'Montserrat';
+            color: var(--main-gray);
+        }
+    }
+
+    .searchBar {
+        margin-left: 25px;
+        border: 3px solid #f58e2f;
+        border-right: none;
+        padding: 15px;
+        width: 80%;
+        height: 20px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #9DBFAF;
+    }
+
+    .searchButton {
+        width: 40px;
+        height: 36px;
+        border: 1px solid #f58e2f;
+        background: #f58e2f;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .solid {
+        border-top: 3px solid rgb(78, 78, 78);
+        margin-top: 30px;
+        overflow-y: auto;
+        
+        .chatCard {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--main-background);
+            border-right: 1px solid var(--main-gray);  
+            cursor: pointer;
+            transition-duration: 0.2s;
+
+            &:hover {
+                background-color: var(--main-shadow);
+                .title{
+                    color: rgb(0, 0, 0);
+                }
+            }
+            .profil {
+                display: flex;
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-bottom: 25px;
+                img {
+                    border-radius: 50%;
+                    margin-right: 5px;
+                }
+                .title {
+                    color: var(--main-blue);
+                    font: normal normal 600 18px/20px 'Montserrat';
+                }
+                .subtitle {
+                    font: normal normal 400 13px/20px 'Montserrat';
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
