@@ -9,8 +9,11 @@ npm install
 npm run dev
 
 Open Terminal 2
+<br />
 cd > server
+<br />
 npm install
+<br />
 npm start
 
 Check http://localhost:3000/
