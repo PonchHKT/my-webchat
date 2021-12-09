@@ -22,12 +22,12 @@ code {
   padding: 0;
 }
 :root {
-  --main-blue: #2c2c2c;
+  --main-blue: #000000;
   --main-gray: #808080;
-  --main-blue-dark: #002d5a;
+  --main-blue-dark: #383431;
   --main-light-gray: #eeeeee;
   --main-background: #ffffff;
-  --main-shadow: gray;
+  --main-shadow: rgb(251, 120, 32);
 }
 
 a {
