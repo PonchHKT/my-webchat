@@ -1,8 +1,11 @@
 How to install : 
 
 Open Terminal 1
+<br />
 cd > frontend
+<br />
 npm install
+<br />
 npm run dev
 
 Open Terminal 2
