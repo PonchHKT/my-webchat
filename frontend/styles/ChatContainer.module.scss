@@ -1,50 +1,145 @@
-.chatbox{
-    width: 150vh;
-    height: 200vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-}
-.chatwindow{
-    flex: auto;
-    max-height: calc(100% - 60px);
-    background: #2f2f2f;
-    overflow: auto;
+.chatContainer {
+    background-image: url('https://crew.bet/wp-content/uploads/2015/07/bet-blocks-bg.png?id=1563');
+    background-repeat: repeat;
+    background-size: 100%;
+    width: 70vw;
+    position: relative;
+
+    .chatContainerHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 10px ;
+        box-shadow: 0 4px 2px -2px var(--main-gray);
+
+        .profil {
+            display: flex;
+            align-items: center;
+            
+
+            img {
+                margin-right: 10px;
+                border-radius: 50%;
+            }
+
+            div {
+                .title {
+                    color: var(--main-blue);
+                    font: normal normal 600 18px/20px 'Montserrat';
+                }
+                .subtitle {
+                    font: normal normal 400 13px/20px 'Montserrat';
+                    color: var(--main-gray);
+                }
+            }
+        }
+
+        .action {
+            i {
+                color: var(--main-gray);
+                margin: 0 5px;
+                font-size: 20px;
+                cursor: pointer;
+                transition-duration: 0.2s; 
+
+                &:hover {
+                    color: var(--main-blue);
+                }
+            }
+        }
+    }
+
+    .chatContainerMsg {
+        overflow-y: auto;
+        clear: both;
+        display: flex;
+        flex-direction: column;
+        padding: 0 5% 50px 5%;
+        height: 80vh;
+
+        .msg {
+            display: flex;
+            flex-direction: column;
+
+            .date {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                margin: 50px 0;
+                hr {
+                    background-color: var(--main-gray);
+                    height: 3px;
+                    width: 30%;
+                    border: none;
+                    border-radius: 5px;
+                }
+                p {
+                    color: var(--main-gray);
+                }
+            }
+
+            .left, .right {
+                width: fit-content;
+                padding: 10px;
+                margin: 5px 0;
+                border-radius: 5px;
+                max-width: 35%;
+                overflow-wrap: break-word;
+            }
+    
+            .right {
+                background-color: var(--main-blue);
+                color: white;
+                align-self: flex-end;
+                text-align: right;
+            }
+    
+            .left {
+                background-color: var(--main-light-gray);
+            }
+        }
+    }
+
+    .chatContainerSend {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        padding: 15px;
+        box-shadow: 0 4px 2px 6px var(--main-gray);
+
+        textarea {
+            padding: 15px;
+            width: 50%;
+            height: auto;
+            resize: none;
+            font: normal normal 500 12px/20px 'Montserrat';
+            border-radius: 5px;
+            border: none;
+            background-color: var(--main-light-gray);
+        }
+
+        i {
+            color: var(--main-gray);
+            margin: 0 7px;
+            font-size: 25px;
+            cursor: pointer;
+            transition-duration: 0.2s; 
+
+            &:hover {
+                color: var(--main-blue);
+            }
+        }
+    }
 }
 
-.chatinput {
-    width: 150vh;
-    height: 60px;
-    background: #ffffff;
-    border-top: 1px solid #080808;
-    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
-    input{
-        height: 59px;
-        line-height: 60px;
-        outline: 0 none;
-        border: none;
-        width: calc(100% - 60px);
-        color: rgb(0, 0, 0);
-        text-indent: 10px;
-        font-size: 12pt;
-        padding: 0;
-        background: #ffffff;
-    }
-    button{
-        float: right;
-        outline: 0 none;
-        border: none;
-        background: rgba(255,255,255,.25);
-        height: 40px;
-        width: 70px;
-        border-radius: 50%;
-        padding: 2px 0 0 0;
-        margin: 10px;
-        transition: all 0.15s ease-in-out;
-        cursor: pointer;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+@media screen and (max-width: 1000px) {
+    .chatContainer {
+        width: 100vw;
     }
 }
