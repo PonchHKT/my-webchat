@@ -1,6 +1,7 @@
 import ChatContainer from '../composants/ChatContainer'
 import ProfilContainer from '../composants/ProfilContainer'
 import SidebarContainer from '../composants/SidebarContainer'
+import ChatBotNesrine from '../composants/ChatBotNesrine'
 import { useEffect, useState } from 'react';
 import { io } from "socket.io-client";
 
@@ -19,14 +20,16 @@ export default function Home() {
         })
     }, [])
 
-    return (
+    return ( 
         <div className={styles.homeContainer}>
-      
+
             <SidebarContainer />
 
             <ChatContainer socket={socketId}/>
 
             <ProfilContainer />
+
+            <ChatBotNesrine />
 
         </div>
     )
