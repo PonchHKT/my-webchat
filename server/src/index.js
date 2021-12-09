@@ -1,10 +1,15 @@
-const express = require('express');
-const logger = require('morgan');
-const cors = require('cors');
-const path = require('path');
+import express from 'express';
+
+import logger from 'morgan';
+import cors from 'cors';
+import path from 'path';
+
+import socket from './socket/socket'
+
 const app = express();
-const server = require('http').createServer(app);
-const io = require('socket.io')(server);
+
+ 
+socket()
 
 app.use(cors());
 app.use(logger('dev'));
@@ -12,4 +17,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-server.listen(4200);
+app.listen(process.env.PORT_SERVER || 4000);
+console.log(`server started at http://localhost:${process.env.PORT_SERVER || 4000}`);
+
