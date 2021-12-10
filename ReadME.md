@@ -1,7 +1,7 @@
 <h1 align="center">Wechat NextJS/React & Socket.io 📑</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" />
+  <img alt="Version" src="https://img.shields.io/badge/NextJS-12.0.1-green" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
   </a>
 </p>
 
@@ -28,11 +28,11 @@ Ever wondered how this happens? You guessed it, sockets.
 cd frontend
 cd server
 ```
-2.Install all the packages with:
+2.Install all the packages of both files:
 ```bash
 npm install
 ```
-3.Install all the packages with:
+3.Run the instance with theses commands:
 ```bash
 frontend> npm run dev
 server> npm start
