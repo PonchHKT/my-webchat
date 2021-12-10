@@ -23,9 +23,19 @@ Ever wondered how this happens? You guessed it, sockets.
 
 ## Installation
 
-First you need to get into the root folder:
+1.First you need to get into the root folder of frontend and server files:
 ```bash
 cd frontend
+cd server
+```
+2.Install all the packages with:
+```bash
+npm install
+```
+3.Install all the packages with:
+```bash
+frontend> npm run dev
+server> npm start
 ```
 ## Usage
 
