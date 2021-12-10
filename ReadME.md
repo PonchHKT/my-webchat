@@ -19,7 +19,7 @@ Ever wondered how this happens? You guessed it, sockets.
 
 ## Demo
 
-<img src="https://s10.gifyu.com/images/Desktop-2021.12.10---17.48.32.03.gif" width="40" height="40" />
+![Alt Text](https://s10.gifyu.com/images/Desktop-2021.12.10---17.48.32.03.gif)
 
 ## Prerequisites
 
