@@ -31,7 +31,7 @@ cd server
 ```
 2.Install all the packages of both files:
 ```bash
-npm install
+>npm install
 ```
 3.Run the instance with theses commands:
 ```bash
@@ -41,40 +41,42 @@ server> npm start
 ## Usage
 
 ```html
-<!DOCTYPE html>
-<html>
+import ChatContainer from '../composants/ChatContainer'
+import ProfilContainer from '../composants/ProfilContainer'
+import SidebarContainer from '../composants/SidebarContainer'
+import ChatBotNesrine from '../composants/ChatBotNesrine'
+import { useEffect, useState } from 'react';
+import { io } from "socket.io-client";
 
-<head>
-    <title>SITE INTERNET</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+import styles from '../styles/Home.module.scss'
 
-</head>
+export default function Home() {
 
-<body>
+    const [socketId, setSocketId] = useState()
 
-    <header>
-        <h1><a href="site.html">Findy.</a></h1>
-        <nav>
+    useEffect(() => {
+        const socket = io("ws://localhost:4242");
+        setSocketId(socket)
 
-            <ul>
+        socket.on("new_msg", (data) => {
+            alert(data.msg);
+        })
+    }, [])
 
-                <li><a href="apply.html">APPLY</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="places.html">PLACES</a></li>
+    return ( 
+        <div className={styles.homeContainer}>
 
-            </ul>
+            <SidebarContainer />
 
-        </nav>
+            <ChatContainer socket={socketId}/>
 
-    </header>
+            <ProfilContainer />
 
-    <main>
+            <ChatBotNesrine />
 
-        <h3>WILL YOU <br> BECOME A <br> PERFECT HUSBAND ?</h3>
-
-    </main>
+        </div>
+    )
+}
 ```
 
 ## Contributing
