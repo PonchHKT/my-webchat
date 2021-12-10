@@ -1,6 +1,7 @@
 <h1 align="center">Wechat NextJS/React & Socket.io 📑</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/NextJS-12.0.1-green" />
+    <img alt="Version" src="https://img.shields.io/badge/Socket.io-4.4.0-cyan" />
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
   </a>
 </p>
