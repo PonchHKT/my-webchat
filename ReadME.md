@@ -16,6 +16,10 @@ The above activities have one thing in common. You need to get a job. Other than
 The endless stream of tweets and instagram posts, the asynchronous nature of a group of friends chatting, all happen instantaneously, in real time. <br>
 Ever wondered how this happens? You guessed it, sockets.
 
+## Demo
+
+<a href="https://ibb.co/cYh02pd"><img src="https://i.ibb.co/WVvZBd1/Microsoft-Teams-image-1.png" alt="Microsoft-Teams-image-1" border="0"></a>
+
 ## Prerequisites
 
 - NextJS 12.0.1
@@ -103,6 +107,3 @@ Copyright © 2021 [@Ponch](https://github.com/PonchHKT)
 
 *** 
 Craft with ❤️ Ponch
-
-
-<a href="https://ibb.co/cYh02pd"><img src="https://i.ibb.co/WVvZBd1/Microsoft-Teams-image-1.png" alt="Microsoft-Teams-image-1" border="0"></a>
