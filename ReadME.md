@@ -10,7 +10,7 @@ My WebChat is an project from school made with NextJS/React and Socket.io.
 
 Introduction:
 
-Alright, so you’re sitting on your couch reading tweets about political instability in the US and how it’ll affect you even though you don’t live there.<br>
+Alright, so you’re sitting on your couch reading tweets about political instability in the US and how it’ll affect you even though you don’t live there.
 The very next minute you’re scrolling through cat asmr posts on instagram because why not. After about 20 minutes of feline purring therapy, you start to have an elaborate discussion with your friends about how you can run your country better than the government. <br>
 The above activities have one thing in common. You need to get a job. Other than that, if you noticed, everything’s happening in real time.<br>
 The endless stream of tweets and instagram posts, the asynchronous nature of a group of friends chatting, all happen instantaneously, in real time. <br>
