@@ -19,7 +19,7 @@ Ever wondered how this happens? You guessed it, sockets.
 
 ## Demo
 
-<a href="https://ibb.co/cYh02pd"><img src="https://i.ibb.co/WVvZBd1/Microsoft-Teams-image-1.png" alt="Microsoft-Teams-image-1" border="0"></a>
+<a <img src="https://s10.gifyu.com/images/Desktop-2021.12.10---17.48.32.03.md.gif" alt="Microsoft-Teams-image-1" border="0"></a>
 
 ## Prerequisites
 
